@@ -22,5 +22,3 @@ module.exports = (req, res, next) => {
     res.status(400).json({ error:'Please provide credentials' });
   }
 };
-
-// res.status(401).json({ you: 'shall not pass!' });

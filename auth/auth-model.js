@@ -10,9 +10,9 @@ function find() {
   return db('users')
 }
 
-function findBy(info) {
+function findBy(username) {
   return db('users')
-    .where(info)
+    .where({ 'users.username':username })
     .first()
 }
 
